@@ -8,14 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Local CSS -->
   <link rel="stylesheet" href="article.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:800" rel="stylesheet">
 </head>
 
 <body>
     <!-- website's title -->
-  <header class="container-fluid">
+  <header id="head" class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 d-flex justify-content-between bg-light">
+      <div class="col-12 col-lg-8 d-flex justify-content-between bg-white py-3">
       <a href="#">
         <h1>Medium</h1>
       </a>
@@ -24,31 +27,37 @@
     </div>
   </header>
   <!-- article's header -->
-  <section class="container-fluid bg-light">
+  <section id="article-head"class="container-fluid bg-white">
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 py-3">
         <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
       </div>
-      <div class="col-12 col-lg-6">
-        <p class="text-uppercase">Youth, now</p>
+      <div class="col-12 col-lg-6 py-3">
+        <p class="text-uppercase text-muted">Member feature story</p>
         <h1>How K-Beauty Conquered the West</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
       </div>
     </div>
   </section>
   <!-- author -->
-  <section class="container-fluid">
+  <section id="article-author" class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 bg-light">
+      <div class="col-12 col-lg-8 bg-white py-3">
         <div class="media">
           <img class="mr-3" src="https://via.placeholder.com/70x70/#6C757D/000000?text=header" alt="Generic placeholder image">
-          <div class="media-body">
-            <div>
-              <p class="mt-0">Author Name</p>
-              <button>Follow</button>
+          <div class="media-body pr-3">
+            <div class="container-fluid">
+              <div class="row">
+                <h5 class="mt-0 px-1">Author Name</h5>
+                <button class="btn btn-sm btn-outline-secondary">Follow</button>
+              </div>
             </div>
-            <div>
-              <p>Date - Reading time</p>
+            <div class="container-fluid">
+              <div class="row">
+                <p class="mt-0 px-1">Aug 6</p>
+                <p class="mt-0 px-1">-</p>
+                <p class="mt-0 px-1">4 min read</p>
+              </div>
             </div>
           </div>
         </div>
@@ -57,8 +66,9 @@
   </section>
   <!-- article's body -->
   <section>
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 bg-light">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 bg-white p-3">
         <p class="text-justify">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, facilis autem culpa ducimus iste voluptatum in molestias. In commodi quod nulla officia voluptatum eligendi veritatis dolorem. Enim pariatur debitis, expedita.</span>
           <span>Voluptatibus, corporis officiis perspiciatis hic, eveniet illum. Nisi deleniti dolorum, minima, ad hic accusantium eos reprehenderit aliquid dignissimos laudantium expedita nulla aspernatur labore? Est illo reprehenderit commodi inventore iste repudiandae.</span>
@@ -79,7 +89,7 @@
           <span>Animi impedit libero ea. Sit maiores voluptas tempore quia expedita illo quos, cumque molestiae facere temporibus vitae veniam enim consectetur omnis fuga deserunt blanditiis qui aut eum nam, explicabo modi.</span>
           <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
         </p>
-        <blockquote class="blockquote text-right">
+        <blockquote class="blockquote text-right p-5">
           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
@@ -113,7 +123,7 @@
           <span>Animi impedit libero ea. Sit maiores voluptas tempore quia expedita illo quos, cumque molestiae facere temporibus vitae veniam enim consectetur omnis fuga deserunt blanditiis qui aut eum nam, explicabo modi.</span>
           <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
         </p>
-        <blockquote class="blockquote text-left">
+        <blockquote class="blockquote text-left p-5">
           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
@@ -139,31 +149,35 @@
         </p>
       </div>
     </div>
+    </div>
   </section>
   <!-- read next -->
   <section>
-    <div class="row">
-      <div class="col-12 col-lg-6">
+    <div class="container-fluid bg-light">
+      <div class="row p-3">
+      <div class="col-12 col-lg-6 p-3">
         <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
       </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 bg-light p-3">
         <p class="text-uppercase">Read next</p>
         <h1>Title of the next article</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
         <p>Author - Date - Reading time</p>
       </div>
     </div>
+    </div>
   </section>
   <!-- popular articles -->
   <section>
-    <div class="row">
+    <div class="container-fluid bg-white">
+      <div class="row">
       <div class="col-lg-4">
         <div class="col-12">
           <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-12">
-          <p class="text-uppercase">Read next</p>
-          <h1>Title of the next article</h1>
+        <div class="col-12 pt-1 pb-3">
+          <p class="text-uppercase">Read next popular article</p>
+          <h1>Title of the next popular article</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
           <p>Author - Date - Reading time</p>
         </div>
@@ -172,9 +186,9 @@
         <div class="col-12">
           <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-12">
-          <p class="text-uppercase">Read next</p>
-          <h1>Title of the next article</h1>
+        <div class="col-12 pt-1 pb-3">
+          <p class="text-uppercase">Read next popular article</p>
+          <h1>Title of the next popular article</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
           <p>Author - Date - Reading time</p>
         </div>
@@ -183,13 +197,14 @@
         <div class="col-12">
           <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-12">
-          <p class="text-uppercase">Read next</p>
-          <h1>Title of the next article</h1>
+        <div class="col-12 pt-1 pb-3">
+          <p class="text-uppercase">Read next popular article</p>
+          <h1>Title of the next popular article</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
           <p>Author - Date - Reading time</p>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <footer class="container-fluid bg-dark">

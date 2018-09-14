@@ -1,0 +1,27 @@
+#head a, #head a:hover {
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  font-size: 2em;
+  color: #000000;
+}
+
+#article-head h1 {
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  font-size: 3em;
+  color: #000000;
+}
+
+#article-head p {
+  font-size: 1.2em;
+  color: #868e96;
+}
+
+#article-author h5 {
+  font-size: 1.2em;
+}
+
+#article-author p {
+  font-size: 1em;
+  color: #868e96;
+}

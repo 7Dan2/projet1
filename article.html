@@ -16,14 +16,15 @@
 
 <body>
     <!-- website's title -->
-  <header id="head" class="container-fluid">
+  <header id="head" class="container-fluid mb-3">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8 d-flex justify-content-between bg-white py-3">
-      <a href="#">
+        <button class="d-none d-lg-block btn btn-outline-dark" type="submit">Become a member</button>
+        <a href="#">
         <h1>Medium</h1>
-      </a>
-      <button class="btn btn-outline-success" type="submit">Get started</button>
-    </div>
+        </a>
+        <button class="btn btn-outline-success" type="submit">Get started</button>
+      </div>
     </div>
   </header>
   <!-- article's header -->
@@ -33,9 +34,9 @@
         <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
       </div>
       <div class="col-12 col-lg-6 py-3">
-        <p class="text-uppercase text-muted">Member feature story</p>
+        <p class="text-uppercase">Member feature story</p>
         <h1>How K-Beauty Conquered the West</h1>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
       </div>
     </div>
   </section>
@@ -89,7 +90,7 @@
           <span>Animi impedit libero ea. Sit maiores voluptas tempore quia expedita illo quos, cumque molestiae facere temporibus vitae veniam enim consectetur omnis fuga deserunt blanditiis qui aut eum nam, explicabo modi.</span>
           <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
         </p>
-        <blockquote class="blockquote text-right p-5">
+        <blockquote class="blockquote text-right border bg-light my-5 p-3">
           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
@@ -123,7 +124,7 @@
           <span>Animi impedit libero ea. Sit maiores voluptas tempore quia expedita illo quos, cumque molestiae facere temporibus vitae veniam enim consectetur omnis fuga deserunt blanditiis qui aut eum nam, explicabo modi.</span>
           <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
         </p>
-        <blockquote class="blockquote text-left p-5">
+        <blockquote class="blockquote text-left border bg-light my-5 p-3">
           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
           <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
@@ -152,23 +153,34 @@
     </div>
   </section>
   <!-- read next -->
-  <section>
-    <div class="container-fluid bg-light">
+  <section id="next">
+    <div class="container-fluid border bg-light my-3">
       <div class="row p-3">
       <div class="col-12 col-lg-6 p-3">
         <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
       </div>
       <div class="col-12 col-lg-6 bg-light p-3">
         <p class="text-uppercase">Read next</p>
-        <h1>Title of the next article</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
-        <p>Author - Date - Reading time</p>
+        <h4>Title of the next article</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <h5 class="mt-0 px-1">Author Name</h5>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <p class="mt-0 px-1">Aug 6</p>
+            <p class="mt-0 px-1">-</p>
+            <p class="mt-0 px-1">4 min read</p>
+          </div>
+        </div>
       </div>
     </div>
     </div>
   </section>
   <!-- popular articles -->
-  <section>
+  <section id="popular">
     <div class="container-fluid bg-white">
       <div class="row">
       <div class="col-lg-4">
@@ -177,9 +189,20 @@
         </div>
         <div class="col-12 pt-1 pb-3">
           <p class="text-uppercase">Read next popular article</p>
-          <h1>Title of the next popular article</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
-          <p>Author - Date - Reading time</p>
+          <h4>Title of the next popular article</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <div class="container-fluid">
+            <div class="row">
+              <h5 class="mt-0 px-1">Author Name</h5>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <p class="mt-0 px-1">Aug 6</p>
+              <p class="mt-0 px-1">-</p>
+              <p class="mt-0 px-1">4 min read</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-4">
@@ -188,9 +211,20 @@
         </div>
         <div class="col-12 pt-1 pb-3">
           <p class="text-uppercase">Read next popular article</p>
-          <h1>Title of the next popular article</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
-          <p>Author - Date - Reading time</p>
+          <h4>Title of the next popular article</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <div class="container-fluid">
+            <div class="row">
+              <h5 class="mt-0 px-1">Author Name</h5>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <p class="mt-0 px-1">Aug 6</p>
+              <p class="mt-0 px-1">-</p>
+              <p class="mt-0 px-1">4 min read</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-4">
@@ -199,31 +233,43 @@
         </div>
         <div class="col-12 pt-1 pb-3">
           <p class="text-uppercase">Read next popular article</p>
-          <h1>Title of the next popular article</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
-          <p>Author - Date - Reading time</p>
+          <h4>Title of the next popular article</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <div class="container-fluid">
+            <div class="row">
+              <h5 class="mt-0 px-1">Author Name</h5>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <p class="mt-0 px-1">Aug 6</p>
+              <p class="mt-0 px-1">-</p>
+              <p class="mt-0 px-1">4 min read</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     </div>
   </section>
-  <footer class="container-fluid bg-dark">
+  <!-- footer -->
+  <footer id="foot" class="container-fluid bg-dark mt-3">
     <!-- top footer, hidden for xs, sm and md -->
     <div class="container">
       <div class="row justify-content-center">
-        <div class="d-none d-lg-block col-lg-4">
+        <div class="d-none d-lg-block col-lg-4 p-3">
           <div class="col-12 text-white">
             <h3>Discover Medium</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere.</p>
           </div>
         </div>
-        <div class="d-none d-lg-block col-lg-4">
+        <div class="d-none d-lg-block col-lg-4 p-3">
           <div class="col-12 text-white">
             <h3>Discover Medium</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere.</p>
           </div>
         </div>
-        <div class="d-none d-lg-block col-lg-4">
+        <div class="d-none d-lg-block col-lg-4 p-3">
           <div class="col-12 text-white">
             <h3>Discover Medium</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere.</p>
@@ -231,12 +277,16 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 d-flex justify-content-between">
+    <div class="row justify-content-center mt-3">
+      <div class="col-12 col-lg-9 d-flex justify-content-between border-top py-3">
         <a href="#">
           <h1>Medium</h1>
         </a>
-        <button class="btn btn-outline-success" type="submit">Get started</button>
+        <div>
+          <button class="btn btn-outline-light btn-sm" type="submit">About</button>
+          <button class="btn btn-outline-light btn-sm" type="submit">Help</button>
+          <button class="btn btn-outline-light btn-sm" type="submit">Legal</button>
+        </div>
       </div>
     </div>
   </footer>

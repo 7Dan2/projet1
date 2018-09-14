@@ -1,4 +1,4 @@
-#head a, #head a:hover {
+header a, header a:hover {
   text-decoration: none;
   font-family: 'EB Garamond', serif;
   font-size: 2em;
@@ -18,10 +18,46 @@
 }
 
 #article-author h5 {
+  font-family: 'EB Garamond', serif;
   font-size: 1.2em;
 }
 
 #article-author p {
   font-size: 1em;
   color: #868e96;
+}
+
+#next h4 {
+  font-family: 'EB Garamond', serif;
+  font-size: 3em;
+}
+
+#next p {
+  font-size: 1em;
+  color: #868e96;
+}
+
+#next h5 {
+  font-size: 1.2em;
+}
+
+#popular h4 {
+  font-family: 'EB Garamond', serif;
+  font-size: 3em;
+}
+
+#popular p {
+  font-size: 1em;
+  color: #868e96;
+}
+
+#popular h5 {
+  font-size: 1.2em;
+}
+
+footer a, footer a:hover {
+  text-decoration: none;
+  font-family: 'EB Garamond', serif;
+  font-size: 2em;
+  color: #FFFFFF;
 }

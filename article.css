@@ -1,8 +1,20 @@
-header a, header a:hover {
+/* general rules */
+
+
+
+/* header */
+
+#head a, #head a:hover {
   text-decoration: none;
   font-family: 'EB Garamond', serif;
   font-size: 2em;
   color: #000000;
+}
+
+.clone {
+  font-family: 'Montserrat', sans-serif;
+font-size: 0.8em;
+  opacity: 0.3;
 }
 
 #article-head h1 {

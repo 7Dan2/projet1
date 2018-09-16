@@ -6,7 +6,7 @@
     <link rel="icon" href="./favicon-3b6f8bfa6755d61ebe78c734fd2234a3f0f41e21dd7bf28204f24831e585ce6c.ico" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
@@ -20,76 +20,80 @@
 </head>
   <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="d-flex col-md-12 col-lg-12">
-                <div class="d-flex  justify-content-start bg-success">
-                    <a href="#" id="member" data-toggle="tooltip" title="A member hey ?">Become a member</a>
-                </div>
-                <div class="d-flex justify-content-center">
-                    
-                    <H1><a class="navbar-brand" href="http://medium.com"><strong>Medium</strong></a></H1>
-                </div>
-                <div class="d-flex  justify-content-end text-color ">
+        <!-- Mise en forme du haut de page -->
+        <div class="row bg-danger">
 
+            <div class="col-lg-8 align-items-center justify-content-center">
+
+                <div class="d-flex col-lg-1 d-none d-sm-none d-md-block justify-content-center align-items-center bg-primary" >
+                    <a class="nav-link" href="#"  data-toggle="tooltip" title="A member hey ?">Become a member</a>
+                </div>  
+
+                <div class="col-lg-1 justify-content-center align-items-center bg-warning">
+                    <a class="navbar-brand" href="http://medium.com"><strong>Medium</strong></a>
+                </div>
+
+                <div class="col-lg-1 justify-content-start align-items-center bg-success">
                     <button type="button" class="btn btn-link" data-toggle=" tooltip" data-placement="top" title="Search Medium">
-                    <span class="glyphicon glyphicon-search"></span></button>
-                    
+                        <span class="glyphicon glyphicon-search"></span></button>
                     <button type="button" class="btn btn-link" data-toggle=" tooltip" data-placement="top" title="Remember it's a fork this link will lead you nowhere !"id="signIn" >Sign in</button>
-                    <button type="button" class="btn btn-outline-success" id="Started" data-toggle="tooltip" data-placement="top" title="Come on you're not serious !">Get started</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="tooltip" data-placement="top" title="Come on you're not serious !">Get started</button>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Horizontal navbar -->
+        <div class="row align-items-center justify-content-center full-height">
 
-                </div>
-                </div>
-            
-        
-            <!-- Horizontal navbar -->
-        <div class="row">
-            <div class="col-md-10 col-sm-10 bg-alert">
-                    <nav class="navbar sticky-top navbar-light bg-light">
-                            <a class="navbar-brand" href="#"></a>
-                <ul class="nav justify-content-center text-nowrap">
+            <div class="col-lg-8 align-items-center justify-content-center">
+
+                   
+
+                    <nav class="navbar sticky-top">
+                           
+                           
+
+                
                        
                         
-                    <li class="nav-item">
+                   
                         <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
+                    
+                    
                         <a class="nav-link" href="#">YOUTH, NOW</a>
-                    </li>
-                    <li class="nav-item">
+                    
+                    
                         <a class="nav-link" href="#">CULTURE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./tech-article.html">TECH</a>
-                    </li>
-                    <li class="nav-item">
+                    
+                   
+                        <a class="nav-link" href="./tech-article.html" target="_blank">TECH</a>
+                   
+                    
                         <a class="nav-link" href="#">ENTREPRENEURSHIP</a>
-                    </li>
-                    <li class="nav-item">
+                    
+                    
                         <a class="nav-link" href="#">SELF</a>
-                    </li>
-                    <li class="nav-item">
+                   
+                    
                         <a class="nav-link" href="#">POLITICS</a>
-                    </li>
-                    <li class="nav-item">
+                    
+                   
                         <a class="nav-link" href="#">DESIGN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SCIENCE</a>
-                    </li>
-                    <li class="nav-item">
+                      <a class="nav-link" href="#">SCIENCE</a>
+                    
+                   
                         <a class="nav-link" href="#">POPULAR</a>
-                    </li>
-                    <li class="nav-item">
+                   
                         <a class="nav-link" href="#">MORE</a>
-                    </li>
-                </ul>
-                <div>
+                   
+               
+            </nav>
             </div>
         </div>
         <!-- Welcome Jumbotron -->
-        <div class="row">
-            <div class="d-flex col-lg-12 col-md-12 col-sm-12 col-12">
-            <div class="d-flex justify-content-center">
+        <div class="row justify-content-center">
+            
+            <div class="lg-12 justify-content-center">
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container-fluid">
                         <h1>Welcome on Medium Wild Edition</h1>
@@ -97,29 +101,28 @@
                     </div>
                 </div>
             </div>
+        
         </div>
-    </div>
         <hr/>
         <!-- Article for free readers -->
-    <div class="row">
+    <div class="row justify-content-center">
         
-            <div class="d-flex col-md-8 col-sm-8">
+            <div class="col-lg-2 justify-content-center">
                 <div class="media border p-3">
                     <div class="media-body">
                         <h4>Do it Wild <small><i>Posted on September 13, 2018</i></small></h4>
-                            <div class="d-flex col-12 col-md-12 col-sm-12">
+                            
                                 <a href="https://placeholder.com"><img src="https://via.placeholder.com/400x200" alt="First article"></a>
-                            </div>
+                            
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                          Nunc rhoncus augue eget enim bibendum sagittis ac nec diam. 
-                         Nam tempus, augue et hendrerit lacinia, diam justo lobortis mi, a mattis est purus id sem. 
-                            </p>
+                        </p>
                     </div>
                 </div>    
             </div>
         
-            <div class="d-flex col-md-8 col-sm-8">
-                <div class="col-md-4">
+            <div class="col-lg-2">
+                
                     <div class="media border p-3">
                         <div class="media-body">
                             <h4>BS killed me !1</h4><small><i>Posted on February 19, 2016</i></small>
@@ -127,12 +130,12 @@
                                     <p>Lorem ipsum...</p>
                         </div>
                     </div>
-                </div>
-                </div>
-            
+                
+            </div>
+        </div>   
 
-            <div class="d-flex col-md-8 col-sm-8">
-                <div class="col-md-4">
+            <div class="col-lg-3">
+                
                     <div class="media border p-3">
                         <div class="media-body">
                             <h4>BS killed me !2</h4><small><i>Posted on February 19, 2016</i></small>
@@ -140,9 +143,9 @@
                                     <p>Lorem ipsum...</p>
                         </div>
                     </div>
-                </div>
+                
             </div>
-        </div>
+        
             
                 
             

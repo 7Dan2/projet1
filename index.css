@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 #navbar li{
+=======
+* {
+    box-sizing: border-box;
+}
+a{
+>>>>>>> a2477eb5f631ecdf55f3cee15fe1f48bfce29b4d
     text-decoration: none;
 }

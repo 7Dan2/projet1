@@ -11,59 +11,157 @@
   <!-- Local CSS -->
   <link rel="stylesheet" href="article.css">
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:800|Montserrat:600i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:800|Playfair+Display:700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
-
 <body>
-    <!-- website's title -->
-  <header id="head" class="container-fluid mb-3">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 d-flex justify-content-between bg-white py-3">
-        <button class="d-none d-lg-block btn btn-outline-dark" type="submit">Become a member</button>
-        <div>
-          <a href="#">
-          <h1>Medium.<span class="clone">clone</span></h1>
-          </a>
+  <!-- modals -->
+  <section id="modals">
+    <!-- become a member -->
+    <div class="modal fade" id="membership" tabindex="-1" role="dialog" aria-labelledby="becomeMember" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="becomeMember">Some thoughts are worth more than a penny.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-center my-3">
+              <div class="col-3 media-body">
+                <img class="rounded " src="https://placeimg.com/100/100/tech" alt="Generic placeholder image">
+              </div>
+              <div class="col-9 modal-body pt-0">
+                <p>Become a member for unlimited, ad-free reading. Just $5/month or $50/year..</p>
+                <p>Have an account ? <a href="#" class="text-muted" data-toggle="modal" data-target="#sign-in" data-dismiss="modal">Sign in</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No, thanks</button>
+            <button type="button" href="#" class="btn btn-outline-success">Sign up</button>
+          </div>
         </div>
-        <div class="row justify-content-end">
-            <button class="btn btn-outline-success d-none d-lg-block mr-1" type="Sign in">Sign in</button>
-            <button class="btn btn-outline-success mr-1" type="submit">Get started</button>
+      </div>
+    </div>
+    <!-- sign in -->
+    <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="sign-in" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sign-in">Welcome back.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-center my-3">
+              <form action="" class="align-self-center">
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+                </div>
+                <div class="form-group">
+                  <p>Have an account ? <a href="#" class="text-muted" data-toggle="modal" data-target="#membership" data-dismiss="modal">Sign in</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- work in progress -->
+    <div class="modal fade" id="wip" tabindex="-1" role="dialog" aria-labelledby="workInProgress" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="wip">Oups ! Something went wrong..</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-center my-3">
+              <div class="col-12 modal-body">
+                <p>This section is not available yet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- website's title -->
+  <header id="head" class="container-fluid">
+    <div class="row justify-content-center py-2">
+      <div class="col-12 col-lg-8 bg-white">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-3 d-none d-xl-block text-left">
+            <a href="#" class="text-muted" data-toggle="modal" data-target="#membership">Become a member</a>
+          </div>
+          <div class="col-3 text-left text-lg-center">
+            <a href="#"><h1 class="text-dark">Medium</h1></a>
+          </div>
+          <div class="col-3">
+            <div class="row justify-content-end align-items-center">
+              <div class="d-none d-xl-block col-xl-1">
+                <a href="#"><i class="fas fa-search"></i></a>
+              </div>
+              <div class="d-none d-xl-block col-xl-5 text-right">
+                <a href="#" class="text-success link" data-toggle="modal" data-target="#sign-in">Sign in</a>
+              </div>
+              <div class="col-12 col-xl-5 text-right">
+                <button href="#" class="btn btn-outline-success" data-toggle="modal" data-target="#membership">Get started</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </header>
   <!-- article's header -->
-  <section id="article-head"class="container-fluid bg-white">
+  <section id="article-head" class="container-fluid pb-2">
     <div class="row">
-      <div class="col-12 col-lg-6 py-3">
-        <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
+      <div class="col-12 col-lg-6 col order-1 order-lg-2 py-1">
+        <img src="https://placeimg.com/1000/800/any/tech" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption text-muted text-center text-lg-left font-italic">Photo: generated via placeimg.com</figcaption>
       </div>
-      <div class="col-12 col-lg-6 py-3">
-        <p class="text-uppercase">Member feature story</p>
-        <h1>How K-Beauty Conquered the West</h1>
-        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+      <div class="col-12 col-lg-6 col order-2 order-lg-1">
+        <p class="text-uppercase text-muted font-weight-bold">Member feature story</p>
+        <h1 class="text-dark">The Single Most Important Thing You Need To Know About Technology</h1>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
     </div>
   </section>
   <!-- author -->
-  <section id="article-author" class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 bg-white py-3">
-        <div class="media">
-          <img class="mr-3" src="https://via.placeholder.com/70x70/#6C757D/000000?text=header" alt="Generic placeholder image">
+  <section id="article-author" class="container-fluid py-2">
+    <div class="row justify-content-center py-2">
+      <div class="col-12 col-lg-8">
+        <div class="media col-6 p-0">
+          <img class="rounded-circle" src="https://placeimg.com/70/70/people" alt="Generic placeholder image">
           <div class="media-body pr-3">
             <div class="container-fluid">
-              <div class="row">
-                <h5 class="mt-0 px-1">Author Name</h5>
-                <button class="btn btn-sm btn-outline-secondary">Follow</button>
-              </div>
-            </div>
-            <div class="container-fluid">
-              <div class="row">
-                <p class="mt-0 px-1">Aug 6</p>
-                <p class="mt-0 px-1">-</p>
-                <p class="mt-0 px-1">4 min read</p>
+              <div class="row justify-content-start">
+                <div class="col-auto align-self-end">
+                  <a href="#" data-toggle="modal" data-target="#wip" class="text-dark text-left">Rachel Williams</a>
+                </div>
+                <div class="d-none d-md-block col-sm-3 align-self-end">
+                  <button data-toggle="modal" data-target="#wip" class="btn btn-outline-dark btn-sm">Follow</button>
+                </div>
+                <div class="col-12 align-self-start">
+                  <p class="text-muted">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+                </div>
               </div>
             </div>
           </div>
@@ -71,13 +169,12 @@
       </div>
     </div>
   </section>
-  <!-- article's body -->
-  <section>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-      <div class="col-12 col-lg-8 bg-white p-3">
+<!-- article's body -->
+  <section id="article-body" class="container-fluid py-2">
+    <div class="row">
+      <div class="col-12 col-lg-8 p-3 offset-lg-2">
         <p class="text-justify">
-          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, facilis autem culpa ducimus iste voluptatum in molestias. In commodi quod nulla officia voluptatum eligendi veritatis dolorem. Enim pariatur debitis, expedita.</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, facilis autem culpa ducimus iste voluptas in molestias. In commodi quod nulla officia voluptatum eligendi veritatis dolorem. Enim pariatur debitis, expedita.</span>
           <span>Voluptatibus, corporis officiis perspiciatis hic, eveniet illum. Nisi deleniti dolorum, minima, ad hic accusantium eos reprehenderit aliquid dignissimos laudantium expedita nulla aspernatur labore? Est illo reprehenderit commodi inventore iste repudiandae.</span>
           <span>Dolorem iure quam recusandae ullam accusantium nam, laboriosam harum, sapiente minima a amet fugit itaque? Aut totam inventore aliquam, illum alias. Error debitis atque perferendis explicabo itaque, nihil inventore possimus.</span>
           <span>Nulla quos inventore deleniti asperiores saepe expedita, deserunt dolorum nesciunt! Assumenda fuga, perferendis quos! Nostrum cumque, nisi consequatur at quidem, repellat recusandae provident in itaque, earum unde officia atque aperiam.</span>
@@ -96,9 +193,9 @@
           <span>Animi impedit libero ea. Sit maiores voluptas tempore quia expedita illo quos, cumque molestiae facere temporibus vitae veniam enim consectetur omnis fuga deserunt blanditiis qui aut eum nam, explicabo modi.</span>
           <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
         </p>
-        <blockquote class="blockquote text-right border bg-light my-5 p-3">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <blockquote class="blockquote text-right my-5 p-3">
+          <p class="font-italic text-secondary">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+          <footer class="blockquote-footer text-muted">Randy Fernandez</footer>
         </blockquote>
         <p class="text-justify">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, facilis autem culpa ducimus iste voluptatum in molestias. In commodi quod nulla officia voluptatum eligendi veritatis dolorem. Enim pariatur debitis, expedita.</span>
@@ -110,6 +207,24 @@
           <span>Animi impedit libero ea. Sit maiores voluptas tempore quia expedita illo quos, cumque molestiae facere temporibus vitae veniam enim consectetur omnis fuga deserunt blanditiis qui aut eum nam, explicabo modi.</span>
           <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
         </p>
+      </div>
+      <div class="col-12 col-lg-8 p-3 offset-lg-2">
+        <img src="https://placeimg.com/1000/800/any/tech" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption text-muted text-center text-lg-left font-italic">Photo: generated via placeimg.com</figcaption>
+      </div>
+      <div class="col-12 col-lg-8 p-3 offset-lg-2">
+        <p class="text-justify">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, facilis autem culpa ducimus iste voluptatum in molestias. In commodi quod nulla officia voluptatum eligendi veritatis dolorem. Enim pariatur debitis, expedita.</span>
+          <span>Voluptatibus, corporis officiis perspiciatis hic, eveniet illum. Nisi deleniti dolorum, minima, ad hic accusantium eos reprehenderit aliquid dignissimos laudantium expedita nulla aspernatur labore? Est illo reprehenderit commodi inventore iste repudiandae.</span>
+          <span>Dolorem iure quam recusandae ullam accusantium nam, laboriosam harum, sapiente minima a amet fugit itaque? Aut totam inventore aliquam, illum alias. Error debitis atque perferendis explicabo itaque, nihil inventore possimus.</span>
+          <span>Nulla quos inventore deleniti asperiores saepe expedita, deserunt dolorum nesciunt! Assumenda fuga, perferendis quos! Nostrum cumque, nisi consequatur at quidem, repellat recusandae provident in itaque, earum unde officia atque aperiam.</span>
+          <span>Tempora, a consequatur ipsam commodi impedit amet repudiandae nostrum! Porro quis maiores, minima placeat libero nam sint quae iure facere, laboriosam fuga atque ut ea necessitatibus distinctio nulla mollitia dolorem.</span>
+          <span>Hic quos delectus, quasi maxime. Error, alias sapiente? Ad ratione id quaerat facilis, nisi, quasi quam recusandae cupiditate cumque libero eum sunt vel maiores deserunt voluptatibus soluta. Deleniti, laboriosam odit!</span>
+          <span>Animi impedit libero ea. Sit maiores voluptas tempore quia expedita illo quos, cumque molestiae facere temporibus vitae veniam enim consectetur omnis fuga deserunt blanditiis qui aut eum nam, explicabo modi.</span>
+          <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
+        </p>
+      </div>
+      <div class="col-12 col-lg-8 p-3 offset-lg-2">
         <p class="text-justify">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, facilis autem culpa ducimus iste voluptatum in molestias. In commodi quod nulla officia voluptatum eligendi veritatis dolorem. Enim pariatur debitis, expedita.</span>
           <span>Voluptatibus, corporis officiis perspiciatis hic, eveniet illum. Nisi deleniti dolorum, minima, ad hic accusantium eos reprehenderit aliquid dignissimos laudantium expedita nulla aspernatur labore? Est illo reprehenderit commodi inventore iste repudiandae.</span>
@@ -130,9 +245,9 @@
           <span>Animi impedit libero ea. Sit maiores voluptas tempore quia expedita illo quos, cumque molestiae facere temporibus vitae veniam enim consectetur omnis fuga deserunt blanditiis qui aut eum nam, explicabo modi.</span>
           <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
         </p>
-        <blockquote class="blockquote text-left border bg-light my-5 p-3">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <blockquote class="blockquote text-left my-5 p-3">
+          <p class="font-italic text-secondary">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+          <footer class="blockquote-footer text-muted">Randy Fernandez</footer>
         </blockquote>
         <p class="text-justify">
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, facilis autem culpa ducimus iste voluptatum in molestias. In commodi quod nulla officia voluptatum eligendi veritatis dolorem. Enim pariatur debitis, expedita.</span>
@@ -155,143 +270,156 @@
           <span>Optio eligendi cumque expedita dolores officia iure eveniet modi perspiciatis temporibus quas quod, dolorum voluptas cum ad fugit asperiores accusamus quos animi perferendis corporis qui repellendus sint iste minima. Recusandae.</span>
         </p>
       </div>
-    </div>
-    </div>
+      <!-- scrolling social menu -->
+      <!-- <div id="social-menu" class="col-lg-1">
+        <div class="row justify-content-start">
+          <div class="col-4 m-0 p-0">
+            <a href="#" class="btn far fa-heart fa-2x m-1"></a>
+          </div>
+          <div class="col-4 m-0 py-2">
+            <a href="#" class="btn">626</a>
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-4 m-0 p-0">
+            <a href="#" class="btn fab fa-twitter fa-2x m-1"></a>
+            <a href="#" class="btn fab fa-facebook-f fa-2x m-1"></a>
+            <a href="#" class="btn far fa-bookmark fa-2x m-1"></a>
+          </div>
+        </div>
+      </div> -->
   </section>
   <!-- read next -->
-  <section id="next">
-    <div class="container-fluid border bg-light my-3">
-      <div class="row p-3">
+  <section id="next" class="container-fluid py-2">
+    <div class="row p-3">
       <div class="col-12 col-lg-6 p-3">
-        <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
+        <a href="#">
+        <img src="https://placeimg.com/1000/500/any/nature" class="img-fluid" alt="Responsive image">
+        </a>
       </div>
-      <div class="col-12 col-lg-6 bg-light p-3">
+      <div class="col-12 col-lg-6 p-3">
         <p class="text-uppercase">Read next</p>
-        <h4>Title of the next article</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <a href="#" class="text-dark"><h4>This Could Happen To You... Errors To Avoid</h4></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. </p>
         <div class="container-fluid">
-          <div class="row">
-            <h5 class="mt-0 px-1">Author Name</h5>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <p class="mt-0 px-1">Aug 6</p>
-            <p class="mt-0 px-1">-</p>
-            <p class="mt-0 px-1">4 min read</p>
+          <div class="row justify-content-start">
+            <div class="col-12 p-0">
+              <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Rachel Williams</a>
+            </div>
+            <div class="col-12 p-0">
+              <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <!-- popular articles -->
-  <section id="popular">
-    <div class="container-fluid bg-white">
+  <section id="popular" class="container-fluid py-2">
       <div class="row">
       <div class="col-lg-4">
         <div class="col-12">
-          <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
+          <a href="#">
+          <img src="https://placeimg.com/1000/600/any/grayscale" class="img-fluid" alt="Responsive image">
+          </a>
         </div>
         <div class="col-12 pt-1 pb-3">
-          <p class="text-uppercase">Read next popular article</p>
-          <h4>Title of the next popular article</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <p class="text-uppercase font-weight-bold text-muted">Read next popular article</p>
+          <a href="#" class="text-dark"><h4>How Do You Define ? Because This Definition Is Pretty Hard To Beat.</h4></a>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
           <div class="container-fluid">
-            <div class="row">
-              <h5 class="mt-0 px-1">Author Name</h5>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <p class="mt-0 px-1">Aug 6</p>
-              <p class="mt-0 px-1">-</p>
-              <p class="mt-0 px-1">4 min read</p>
+            <div class="row justify-content-start">
+              <div class="col-12 p-0">
+                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Rachel Williams</a>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="col-12">
-          <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
+          <a href="#">
+            <img src="https://placeimg.com/1000/600/any/arch" class="img-fluid" alt="Responsive image">
+          </a>
         </div>
         <div class="col-12 pt-1 pb-3">
-          <p class="text-uppercase">Read next popular article</p>
-          <h4>Title of the next popular article</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <p class="text-uppercase font-weight-bold text-muted">Read next popular article</p>
+          <a href="#" class="text-dark"><h4>	Shortcuts - The Easy Way</h4></a>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
           <div class="container-fluid">
-            <div class="row">
-              <h5 class="mt-0 px-1">Author Name</h5>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <p class="mt-0 px-1">Aug 6</p>
-              <p class="mt-0 px-1">-</p>
-              <p class="mt-0 px-1">4 min read</p>
+            <div class="row justify-content-start">
+              <div class="col-12 p-0">
+                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Amy Davis</a>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="col-12">
-          <img src="https://via.placeholder.com/2000x1000/#6C757D/000000?text=header" class="img-fluid" alt="Responsive image">
+          <a href="#">
+            <img src="https://placeimg.com/1000/600/any/tech" class="img-fluid" alt="Responsive image">
+          </a>
         </div>
         <div class="col-12 pt-1 pb-3">
-          <p class="text-uppercase">Read next popular article</p>
-          <h4>Title of the next popular article</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
+          <p class="text-uppercase font-weight-bold text-muted">Read next popular article</p>
+          <a href="#" class="text-dark"><h4>5 Secrets: How To Use To Create A Successful Business Product</h4></a>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus numquam culpa aspernatur, totam veniam obcaecati.</p>
           <div class="container-fluid">
-            <div class="row">
-              <h5 class="mt-0 px-1">Author Name</h5>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <p class="mt-0 px-1">Aug 6</p>
-              <p class="mt-0 px-1">-</p>
-              <p class="mt-0 px-1">4 min read</p>
+            <div class="row justify-content-start">
+              <div class="col-12 p-0">
+                <a href="#" data-toggle="modal" data-target="#wip" class=" text-dark text-left m-0">Katherine Robinson</a>
+              </div>
+              <div class="col-12 p-0">
+                <p class="text-muted mt-1">Aug 6 - <i class="fas fa-star fa-xs"></i> 4 min read</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <!-- footer -->
-  <footer id="foot" class="container-fluid bg-dark mt-3">
+  <footer id="foot" class="container-fluid bg-dark pt-2">
     <!-- top footer, hidden for xs, sm and md -->
     <div class="container">
-      <div class="row justify-content-center">
+      <div  id="foot-up" class="row justify-content-center">
         <div class="d-none d-lg-block col-lg-4 p-3">
-          <div class="col-12 text-white">
-            <h3>Discover Medium</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere.</p>
+          <div class="col-12">
+            <a href="#" data-toggle="modal" data-target="#wip" class="text-white">Discover Medium</a>
+            <p class="text-lg-justify text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere. <a href="#"  class="text-muted" data-toggle="modal" data-target="#wip">Watch</a></p>
           </div>
         </div>
         <div class="d-none d-lg-block col-lg-4 p-3">
-          <div class="col-12 text-white">
-            <h3>Discover Medium</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere.</p>
+          <div class="col-12">
+            <a href="#" data-toggle="modal" data-target="#wip" class="text-white">Make Medium Yours</a>
+            <p class="text-lg-justify text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere. <a href="#"  class="text-muted" data-toggle="modal" data-target="#wip">Explore</a></p>
           </div>
         </div>
         <div class="d-none d-lg-block col-lg-4 p-3">
-          <div class="col-12 text-white">
-            <h3>Discover Medium</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere.</p>
+          <div class="col-12">
+            <a href="#"  class="text-white" data-toggle="modal" data-target="#membership">Become a member</a>
+            <p class="text-lg-justify text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos nam tempore labore alias eveniet aperiam debitis commodi, omnis aut ad voluptatem ipsum explicabo tenetur dicta, repellendus nulla, mollitia facere. <a href="#"  class="text-muted" data-toggle="modal" data-target="#membership">Upgrade</a></p>
+
           </div>
         </div>
       </div>
     </div>
-    <div class="row justify-content-center mt-3">
+    <div id="foot-down" class="row justify-content-center mt-3">
       <div class="col-12 col-lg-9 d-flex justify-content-between border-top py-3">
         <a href="#">
-          <h1>Medium.<span class="clone">clone</span></h1>
+          <h1 class="text-white">Medium</h1>
         </a>
         <div>
-          <button class="btn btn-outline-light btn-sm" type="submit">About</button>
-          <button class="btn btn-outline-light btn-sm" type="submit">Help</button>
-          <button class="btn btn-outline-light btn-sm" type="submit">Legal</button>
+          <button data-toggle="modal" data-target="#wip" class="btn btn-outline-light btn-sm" type="submit">About</button>
+          <button data-toggle="modal" data-target="#wip" class="btn btn-outline-light btn-sm" type="submit">Help</button>
+          <button data-toggle="modal" data-target="#wip" class="btn btn-outline-light btn-sm" type="submit">Legal</button>
         </div>
       </div>
     </div>
@@ -301,7 +429,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+  <!-- local JavaScript -->
+  <script src="script.js"></script>
 </body>
 
 </html>
